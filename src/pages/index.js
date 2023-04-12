@@ -22,9 +22,6 @@ export default function Home() {
 						Devtter!
 					</Link>
 				</h1>
-				<nav>
-					<Link href="/timeline">TIMELINE</Link>
-				</nav>
 			</main>
 		</>
 	);
