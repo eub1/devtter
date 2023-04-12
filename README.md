@@ -14,6 +14,9 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+
+## latest version of next.js
+$npm install next@latest
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
