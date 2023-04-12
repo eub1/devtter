@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +18,12 @@ export default function Home() {
 			<main className={styles.main}>
 				<h1 className={styles.description}>
 					Welcome to
-					<a href="https://devtter-euge.vercel.app" target="_blank">
+					<Link href="https://devtter-euge.vercel.app" target="_blank">
 						Devtter!
-					</a>
+					</Link>
 				</h1>
 				<nav>
-					<a href="/timeline">TIMELINE</a>
+					<Link href="/timeline">TIMELINE</Link>
 				</nav>
 			</main>
 		</>
