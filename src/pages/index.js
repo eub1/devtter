@@ -17,10 +17,12 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<h1 className={styles.description}>
-					Welcome to
-					<Link href="https://devtter-euge.vercel.app" target="_blank">
-						Devtter!
-					</Link>
+					Welcome to{" "}
+					<span>
+						<Link href="https://devtter-euge.vercel.app" target="_blank">
+							Devtter!
+						</Link>
+					</span>
 				</h1>
 			</main>
 		</>
