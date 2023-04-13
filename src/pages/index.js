@@ -12,7 +12,7 @@ export default function Home() {
 
 			<AppLayout>
 				<section>
-					<img src="/devtter-logo.png" alt="Logo" />
+					<img src="/favicon.ico" alt="Logo" />
 					<h1>Devtter</h1>
 					<h2>
 						Talk about development
@@ -21,6 +21,29 @@ export default function Home() {
 					</h2>
 				</section>
 			</AppLayout>
+			<style jsx>
+				{`
+					img {
+						width: 80px;
+					}
+					section {
+						display: grid;
+						height: 100%;
+						place-content: center;
+						place-items: center;
+					}
+					h1 {
+						color: ${colors.primary};
+						font-weight: 700;
+						margin-bottom: 8px;
+					}
+					h2 {
+						color: ${colors.secondary};
+						font-size: 18px;
+						margin: 0;
+					}
+				`}
+			</style>
 		</>
 	);
 }
