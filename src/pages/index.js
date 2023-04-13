@@ -1,6 +1,8 @@
 import Head from "next/head";
 import AppLayout from "../components/AppLayout";
 import { colors } from "../styles/theme";
+import Button from "@/components/Button";
+import GitHub from "@/components/Icons/GitHub";
 
 export default function Home() {
 	return (
@@ -19,12 +21,21 @@ export default function Home() {
 						<br />
 						with developers 👩‍💻👨‍💻
 					</h2>
+					<div>
+						<Button>
+							<GitHub fill="white" />
+							Login with Github
+						</Button>
+					</div>
 				</section>
 			</AppLayout>
 			<style jsx>
 				{`
 					img {
 						width: 80px;
+					}
+					div {
+						margin-top: 8px;
 					}
 					section {
 						display: grid;
