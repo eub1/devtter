@@ -4,6 +4,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 $ npx create-next-app devtter
 
+## ESLINT CONFIG
+
+$npm init @eslint/config
+or
+npm install eslint -D
+npx eslint --init
+
 ## Getting Started
 
 First, run the development server:

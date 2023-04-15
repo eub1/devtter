@@ -11,7 +11,7 @@ export default function Home() {
 	const [user, setUser] = useState(null);
 	// console.log(user);
 
-	//cdo se monta el componente, mira si tiene sesion el usuario
+	// cdo se monta el componente, mira si tiene sesion el usuario
 	useEffect(() => {
 		onAuthStateChanged(setUser);
 	}, []);
@@ -31,11 +31,11 @@ export default function Home() {
 		<>
 			<Head>
 				<title>devter 🐦</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<AppLayout>
 				<section>
-					<img src="/favicon.ico" alt="Logo" />
+					<img src='/favicon.ico' alt='Logo' />
 					<h1>Devtter</h1>
 					<h2>
 						Talk about development
@@ -45,7 +45,7 @@ export default function Home() {
 					<div>
 						{user === null && (
 							<Button onClick={handleClick}>
-								<GitHub fill="white" />
+								<GitHub fill='white' />
 								Login with Github
 							</Button>
 						)}

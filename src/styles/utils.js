@@ -4,6 +4,6 @@
 // 3. al color que teniamos le a;adimos, concatenamos el valor de la opacidad
 
 export const addOpacityToColor = (color, opacity) => {
-	const opacityHex = Math.round(opacity * 255).toString(16);
-	return `${color}${opacityHex}`;
+  const opacityHex = Math.round(opacity * 255).toString(16);
+  return `${color}${opacityHex}`;
 };
