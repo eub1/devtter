@@ -33,7 +33,6 @@ export default function Home() {
 				<title>devter 🐦</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
 			<AppLayout>
 				<section>
 					<img src="/favicon.ico" alt="Logo" />
