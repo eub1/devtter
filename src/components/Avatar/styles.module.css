@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	align-items: center;
+}
+
+.avatar {
+	border-radius: 999px;
+	height: 49px;
+	width: 49px;
+}
+
+/* cdo el strong, esta al lado de className avatar... */
+/*  + ... es el que tengo al lado, en este caso el selector es sobre
+la etiqueta strong */
+.avatar + strong {
+	margin-left: 8px;
+}

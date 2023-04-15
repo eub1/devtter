@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import AppLayout from "../components/AppLayout";
 import { colors } from "../styles/theme";
-import Button from "@/components/Button";
-import GitHub from "@/components/Icons/GitHub";
 
 import { loginWithGitHub, onAuthStateChanged } from "../firebase/client.js";
+import Button from "@/components/Button";
+import GitHub from "@/components/Icons/GitHub";
+import Avatar from "@/components/Avatar";
+import Logo from "@/components/Icons/Logo";
 
 export default function Home() {
 	const [user, setUser] = useState(null);
@@ -35,7 +37,7 @@ export default function Home() {
 			</Head>
 			<AppLayout>
 				<section>
-					<img src='/favicon.ico' alt='Logo' />
+					<Logo />
 					<h1>Devtter</h1>
 					<h2>
 						Talk about development
@@ -51,8 +53,12 @@ export default function Home() {
 						)}
 						{user && user.avatar && (
 							<div>
-								<img src={user.avatar} />
-								<strong>{user.userName}</strong>
+								<Avatar
+									alt={user.userName}
+									src={user.avatar}
+									text={user.userName}
+									withText
+								/>
 							</div>
 						)}
 					</div>
