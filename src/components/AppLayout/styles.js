@@ -36,6 +36,7 @@ export default css`
     /* para mobile */
     height: 100%;
     width: 100%;
+    position: relative;
   }
   /* cuando pasamos el breakpoint la caja se hace mas chica, por defecto en mobile, es 100% */
   @media (min-width: ${breakpoints.mobile}) {
